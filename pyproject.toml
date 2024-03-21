@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "parse-csgo-items"
+version = "0.1.0"
+description = ""
+authors = ["Sergei Hilton <sergeihilton@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.x"
+pydantic = "^2.6.4"
+vdf = "^3.4"
+requests = "^2.31.0"
+pytest = "^8.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+pythonpath = "."
